@@ -1,5 +1,5 @@
 Hello World!
-你好世界啊！
+你好世界！
 
 #!/bin/bash
 echo "post-receive hook is running..."
