@@ -1,2 +1,14 @@
 Hello World!
 你好世界啊8！
+
+#!/bin/bash
+echo "post-receive hook is running..."
+
+GIT_REPO=/root/git.git
+TMP_GIT_CLONE=/tmp/git
+PUBLIC_WWW=/root/githome
+
+rm -rf ${TMP_GIT_CLONE}
+git clone $GIT_REPO $TMP_GIT_CLONE
+rm -rf ${PUBLIC_WWW}/*
+cp -rf ${TMP_GIT_CLONE}/* ${PUBLIC_WWW}
