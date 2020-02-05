@@ -1,12 +1,16 @@
 Hello World!
 你好世界！
 
+网站程序来自https://www.directorylister.com/
+
+git 服务器配置 post-receive
+
 #!/bin/bash
 echo "post-receive hook is running..."
 
-GIT_REPO=/root/git.git
+GIT_REPO=/xxx/git.git
 TMP_GIT_CLONE=/tmp/git
-PUBLIC_WWW=/root/githome
+PUBLIC_WWW=/xxx/githome
 
 rm -rf ${TMP_GIT_CLONE}
 git clone $GIT_REPO $TMP_GIT_CLONE
